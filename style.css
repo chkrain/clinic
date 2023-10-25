@@ -1,0 +1,337 @@
+@font-face {
+    font-family: 'Lato';
+    src: url(../clinic/fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Ukij';
+    src: url(../clinic/fonts/UKIJInichkeb.ttf);
+}
+
+body{
+    background-color: #ECF4FF;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ECF4FF;;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  
+.logo img {
+    max-width: 100px;
+}
+  
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+  
+.dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    width: 296px;
+    z-index: 1;
+    background: transparent;
+    margin-top: 142px;
+    margin-left: 32px;
+    text-decoration: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: absolute;
+    color: #000;
+    font-family: 'Lato';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 138.889% */
+}
+  
+.column {
+    float: left;
+    width: 50%;
+    background-color: #ECF4FF;
+    border-radius: 10px;
+}
+
+  
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #000;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+}
+  
+.navigation-ul {
+    list-style: none;
+    display: flex;
+    margin-left: 10px;
+    padding: 0;
+}
+  
+.navigation-li {
+    margin-right: 56px;
+    color: #000;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+}
+
+li a{
+    text-decoration: none;
+}
+
+.navigation-li-k {
+    margin-right: 135px;
+    color: #000;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+
+}
+
+.sub-button{
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    padding: 3px;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.dropdown-btn:hover + .dropdown-content{
+    display: block;
+    max-height: 300px;
+}
+
+.dropdown-content:hover{
+    max-height: 300px;
+}
+
+.drop-arrow{
+    padding-left: 12px;
+    margin-right: 56px;
+}
+
+.sub-button:hover{
+    background-color: white;
+}
+
+.dropdown-btn{
+    transition: all 0.3s ease;
+}
+
+.dropdown-btn:hover{
+    transition: all 0.3s ease;
+}
+
+.dropdown-btn:hover img{
+    transform: rotateX(180grad);
+    transition: all 0.3s ease;
+}
+
+.dropdown-btn:focus + .dropdown-content, .dropdown-content:hover {
+    display: block;
+    max-height: 300px;
+    opacity: 1;
+}
+
+.header-logo{
+    cursor: pointer;
+    border: none;
+    margin-left: 135px;
+}
+
+.container--2{
+    margin: 62px 105px 0px 135px;
+    width: calc(100% - 270px);
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+
+.text--2{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    text-align: left;
+}
+
+
+.girl{
+    position: relative;
+    margin-top: 45px;
+    right: 0;
+    width: 500px;
+    height: auto;
+}
+
+.our-text{
+    color: #000;
+    font-family: 'Ukij';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+.our-text-down{
+    width: 493px;
+    height: auto;
+    color: #000;
+    font-family: 'Lato';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 125% */
+    margin-bottom: 12px;
+    margin-top: 24px;
+}
+
+.our-text-par{
+    width: 570px;
+    height: auto;
+    color: #000;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+    margin-bottom: 198px;
+}
+
+
+.invite-btn{
+    background-color: orange;
+    color: white;
+    padding: 17px 53px 17px 52px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 370px;
+    max-height: 64px;
+    font-family: 'Lato';
+}
+
+.invite-btn:hover{
+    box-shadow: 0px 0px 20px 0px rgba(255, 138, 30, 0.70);
+}
+
+.invite-btn:active{
+    box-shadow: 0px 4px 4px 0px rgba(103, 56, 0, 0.25) inset;
+}
+
+
+.btn-container-2{
+    max-width: 370px;
+    max-height: 64px;
+    position: relative;
+    display: inline-block;
+    left: 0;
+    bottom: 0;
+}
+
+.container--3{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    height: 100vh;
+    position: relative;
+    margin-top: 132px;
+}
+
+.title-container{
+    width: 258px;
+    height: 47px;
+    margin: 0 591px 0 591px;
+}
+
+.title-3{
+    color: #000;
+    font-family: 'Ukij';
+    font-size: 47px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.container-text-3{
+    width: 500px;
+    height: 300px;
+    text-align: left;
+    margin-left: 135px;
+    margin-top: 72px;
+}
+
+
+.text-3{
+    color: #000;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.image-container{
+    width: 500px;
+    height: 483px;
+    position: absolute;
+    margin-top: 132px;
+    right: 183px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-container-section-3{
+    height: 355px;
+}
+
+.arrow-left{
+    width: 64px;
+    height: 64px;
+    background-color: inherit;
+}
+
+.arrow-right{
+    width: 64px;
+    height: 64px;
+}
+
+.arrow-left:hover{
+    box-shadow: 0px 0px 20px 0px rgba(82, 66, 198, 0.7);
+}
